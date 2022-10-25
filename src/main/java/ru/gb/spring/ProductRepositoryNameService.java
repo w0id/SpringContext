@@ -14,7 +14,7 @@ public class ProductRepositoryNameService {
         Random random = new Random();
         DecimalFormat priceFormat = new DecimalFormat(".##");
         product.setId(sequence);
-        product.setTitle("Товар №" + sequence);
+        product.setTitle("Товар №" + random.nextInt(99));
         product.setPrice(priceFormat.format(999.99 * random.nextDouble()) + " руб.");
     }
 
